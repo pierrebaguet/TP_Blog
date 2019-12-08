@@ -1,0 +1,42 @@
+.list-group-item {
+
+    margin: 3em 0;
+
+    .post {
+
+        &-headings {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        &-content { margin-top: 2em; }
+
+        &-like {
+
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1.5em;
+
+            &__count {
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+        }
+
+        &-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 2em;
+
+            .btn {
+                margin: .2em;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            } 
+        }
+    }
+}
+

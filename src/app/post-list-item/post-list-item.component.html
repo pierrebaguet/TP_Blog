@@ -1,0 +1,22 @@
+<li [ngClass]="{'list-group-item': true,
+'list-group-item-success': status === 'positive',
+'list-group-item-danger': status === 'negative'}">
+    <div class="post">
+        <div class="post-headings">
+            <h2 class="post-title">{{ postTitle }}</h2>
+            <span class="post-date">{{ postDate | date: 'short'}}</span>
+        </div>
+        <div class="post-content">
+            <p>{{ postContent }}</p>
+        </div>
+        <div class="post-like">
+                <p class="post-like__count">Likes : {{ postLoveIts }}</p>
+        </div>
+        <div class="post-actions">
+            <button class="btn btn-success"
+            (click)="addLike()">Love it</button>
+            <button class="btn btn-danger"
+            (click)="removeLike()">Don't love it</button>
+        </div>
+    </div>
+</li>
